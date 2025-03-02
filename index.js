@@ -4,7 +4,9 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
 const session = require('express-session');
-const bcrypt = require('bcrypt');
+// const bcrypt = require('bcrypt');
+const bcrypt = require("bcryptjs");
+
 const otpGenerator = require('otp-generator');
 const userRoutes = require('./routes/userRoutes');
 const errorHandler = require('./middleware/errorHndeler');
